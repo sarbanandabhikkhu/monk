@@ -1,0 +1,105 @@
+/* #213547 #f9f9f9 #535bf2 #747bff #5a01a7*/
+
+$dark: #242424;
+$light: #ffffff;
+$accent: #00d8ff;
+
+:root {
+  color-scheme: light dark;
+  color: rgba($light, 0.87);
+  background-color: $dark;
+}
+
+a {
+  color: $accent;
+
+  &:hover {
+    color: darken($accent, 5%);
+  }
+}
+
+.nav-menu a {
+  &:hover {
+    color: darken($accent, 5%);
+  }
+
+  &.active {
+    color: $accent;
+
+    &:hover {
+      color: darken($accent, 5);
+    }
+  }
+}
+
+button:hover {
+  border-color: $accent;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.read-the-docs {
+  color: lighten($dark, 25);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: $light;
+    background-color: $dark;
+  }
+
+  button {
+    background-color: darken($dark, 2);
+  }
+
+  button:focus,
+  button:focus-visible {
+    outline-color: $light;
+  }
+
+  .nav-menu {
+    background-color: rgba(darken($dark, 2), 0.85);
+
+    a {
+      color: $light;
+    }
+  }
+
+  footer {
+    background-color: darken($dark, 2);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: $dark;
+    background-color: $light;
+  }
+
+  button {
+    background-color: darken($light, 3);
+  }
+
+  button:focus,
+  button:focus-visible {
+    outline-color: $dark;
+  }
+
+  .nav-menu {
+    background-color: rgba(darken($light, 3), 0.85);
+
+    a {
+      color: $dark;
+    }
+  }
+
+  footer {
+    background-color: darken($light, 2);
+  }
+}
