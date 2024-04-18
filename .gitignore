@@ -132,7 +132,7 @@ dist
 
 # React + Vite
 node_modules
-dist
+# dist
 dist-ssr
 *.local
 
