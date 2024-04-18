@@ -10,7 +10,7 @@ export default defineConfig({
       registerType: "autoUpdate",
       workbox: {
         clientsClaim: true,
-        skipWaiting: true,
+        skipWaiting: true
       },
       srcDir: "src",
       filename: "serviceWorker.js",
@@ -18,22 +18,17 @@ export default defineConfig({
       injectRegister: false, // auto
       manifest: false,
       injectManifest: {
-        injectionPoint: null,
+        injectionPoint: null
       },
       devOptions: {
         enabled: true,
-        type: "module",
-      },
-    }),
+        type: "module"
+      }
+    })
   ],
   esbuild: {
     // https://stackoverflow.com/questions/74620427/how-to-configure-vite-to-allow-jsx-syntax-in-js-files
     loader: "jsx",
-    include: [
-      "src/**/*.js",
-      "src/**/*.jsx",
-      "node_modules/**/*.js",
-      "node_modules/**/*.jsx",
-    ],
-  },
+    include: ["src/**/*.js", "src/**/*.jsx", "node_modules/**/*.js", "node_modules/**/*.jsx"]
+  }
 });
