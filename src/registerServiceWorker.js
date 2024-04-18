@@ -1,5 +1,6 @@
+// src/main.js
+
 function registerServiceWorker() {
-  // src/main.js
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register(
       import.meta.env.MODE === "production" ? "/serviceWorker.js" : "/dev-sw.js?dev-sw",

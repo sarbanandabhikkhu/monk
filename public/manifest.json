@@ -1,13 +1,13 @@
 {
   "lang": "en",
   "dir": "ltr",
-  "name": "Coder Monk",
-  "short_name": "CoderMonk",
-  "description": "A fullstack JavaScript developer.",
-  "categories": ["fullstack", "javascript", "developer"],
+  "name": "Buddhist Monk",
+  "short_name": "Monk",
+  "description": "Early Buddhist texts from the Tipitaka.",
+  "categories": ["Buddha", "Buddhism", "Buddhist Literature"],
   "theme_color": "#535bf2",
   "background_color": "#ffffff",
-  "start_url": ".", // "https://example.com" "../startpoint.html"
+  "start_url": "./", // "https://example.com" "../startpoint.html"
   "scope": "/", // "/app/" "https://example.com/" "https://example.com/subdirectory/"
   "id": "?homescreen=1",
   "display": "standalone",
@@ -18,102 +18,13 @@
       "src": "assets/monk.svg",
       "sizes": "192x192",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "assets/monk.svg",
       "sizes": "512x512",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "images/touch/homescreen48.png",
-      "sizes": "48x48",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "images/touch/homescreen72.png",
-      "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "images/touch/homescreen96.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "images/touch/homescreen144.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "images/touch/homescreen192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "images/touch/homescreen512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  "file_handlers": [
-    {
-      "action": "/handle-audio-file",
-      "accept": {
-        "audio/wav": [".wav"],
-        "audio/x-wav": [".wav"],
-        "audio/mpeg": [".mp3"],
-        "audio/mp4": [".mp4"],
-        "audio/aac": [".adts"],
-        "audio/ogg": [".ogg"],
-        "application/ogg": [".ogg"],
-        "audio/webm": [".webm"],
-        "audio/flac": [".flac"],
-        "audio/mid": [".rmi", ".mid"]
-      }
-    }
-  ],
-  "launch_handler": {
-    "client_mode": ["focus-existing, auto"]
-  },
-  "protocol_handlers": [
-    {
-      "protocol": "web+jngl",
-      "url": "/lookup?type=%s"
-    },
-    {
-      "protocol": "web+jnglstore",
-      "url": "/shop?for=%s"
-    }
-  ],
-  "prefer_related_applications": true,
-  "related_applications": [
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.example.app1",
-      "id": "com.example.app1",
-      "min_version": "2",
-      "fingerprints": [
-        {
-          "type": "sha256_cert",
-          "value": "92:5A:39:05:C5:B9:EA:BC:71:48:5F:F2"
-        }
-      ]
-    },
-    {
-      "platform": "itunes",
-      "url": "https://itunes.apple.com/app/example-app1/id123456789"
-    },
-    {
-      "platform": "windows",
-      "url": "https://apps.microsoft.com/store/detail/example-app1/id123456789"
+      "purpose": "maskable"
     }
   ],
   "shortcuts": [
@@ -153,6 +64,59 @@
       "type": "image/webp",
       "form_factor": "wide",
       "label": "List of Awesome Resources available in Awesome App"
+    }
+  ],
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.example.app1",
+      "id": "com.example.app1",
+      "min_version": "2",
+      "fingerprints": [
+        {
+          "type": "sha256_cert",
+          "value": "92:5A:39:05:C5:B9:EA:BC:71:48:5F:F2"
+        }
+      ]
+    },
+    {
+      "platform": "itunes",
+      "url": "https://itunes.apple.com/app/example-app1/id123456789"
+    },
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/store/detail/example-app1/id123456789"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/handle-audio-file",
+      "accept": {
+        "audio/wav": [".wav"],
+        "audio/x-wav": [".wav"],
+        "audio/mpeg": [".mp3"],
+        "audio/mp4": [".mp4"],
+        "audio/aac": [".adts"],
+        "audio/ogg": [".ogg"],
+        "application/ogg": [".ogg"],
+        "audio/webm": [".webm"],
+        "audio/flac": [".flac"],
+        "audio/mid": [".rmi", ".mid"]
+      }
+    }
+  ],
+  "launch_handler": {
+    "client_mode": ["focus-existing, auto"]
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+jngl",
+      "url": "/lookup?type=%s"
+    },
+    {
+      "protocol": "web+jnglstore",
+      "url": "/shop?for=%s"
     }
   ],
   "share_target": {
